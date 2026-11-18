@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: #f4f5f7; margin: 0; padding: 2rem 1rem; color: #222; }
+.app { max-width: 640px; margin: 0 auto; background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+h1 { margin-top: 0; }
+
+.todo-form { display: flex; flex-direction: column; gap: .5rem; margin-bottom: 1rem; }
+.row { display: flex; gap: .5rem; }
+input, select, button { font: inherit; padding: .5rem; border: 1px solid #ccc; border-radius: 6px; }
+.todo-form > input { flex: 1; }
+button { background: #1a73e8; color: #fff; border: none; cursor: pointer; }
+button:hover { background: #1557b0; }
+button.secondary { background: #e8eaed; color: #333; }
+.error { color: #d93025; font-size: .85rem; margin: .5rem 0; }
+
+ul { list-style: none; padding: 0; margin: 0; }
+li { display: flex; align-items: flex-start; gap: .75rem; padding: .75rem 0; border-bottom: 1px solid #eee; }
+li.editing { display: block; }
+li .body { flex: 1; }
+.title { font-weight: 600; }
+.desc, .due { font-size: .85rem; color: #666; }
+li.done .title { text-decoration: line-through; color: #999; }
+.due.overdue { color: #d93025; font-weight: 600; }
+
+.badge { font-size: .7rem; padding: .1rem .5rem; border-radius: 10px; margin-left: .4rem; color: #fff; }
+.badge.HIGH { background: #d93025; }
+.badge.MEDIUM { background: #f29900; }
+.badge.LOW { background: #188038; }
+
+button.link { background: transparent; color: #1a73e8; padding: .2rem .5rem; }
+button.link:hover { background: #e8f0fe; }
+button.del { color: #999; }
+button.del:hover { background: #fce8e6; color: #d93025; }
+.empty { text-align: center; color: #999; padding: 1.5rem 0; }
